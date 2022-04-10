@@ -19,9 +19,9 @@ export default {
     data () {
         return {
             recommendList:[
-                {id:'0001',title:'大连圣亚海洋世界',desc:'浪漫大连首站，浪漫的海洋主题乐园',imgUrl:'https://cdn.pixabay.com/photo/2021/07/01/21/19/hat-6380330_960_720.jpg'},
-                {id:'0002',title:'大连圣亚海洋世界',desc:'浪漫大连首站，浪漫的海洋主题乐园',imgUrl:'https://cdn.pixabay.com/photo/2021/07/01/21/19/hat-6380330_960_720.jpg'},
-                {id:'0003',title:'大连圣亚海洋世界',desc:'浪漫大连首站，浪漫的海洋主题乐园',imgUrl:'https://cdn.pixabay.com/photo/2021/07/01/21/19/hat-6380330_960_720.jpg'},
+                {id:'0001',title:'大连圣亚海洋世界',desc:'浪漫大连首站，浪漫的海洋主题乐园',imgUrl:'https://cdn.pixabay.com/photo/2022/03/25/13/47/flowers-7091131_960_720.jpg'},
+                {id:'0002',title:'大连圣亚海洋世界',desc:'浪漫大连首站，浪漫的海洋主题乐园',imgUrl:'https://cdn.pixabay.com/photo/2022/03/25/13/47/flowers-7091131_960_720.jpg'},
+                {id:'0003',title:'大连圣亚海洋世界',desc:'浪漫大连首站，浪漫的海洋主题乐园',imgUrl:'https://cdn.pixabay.com/photo/2022/03/25/13/47/flowers-7091131_960_720.jpg'},
             ]
         }
     }
