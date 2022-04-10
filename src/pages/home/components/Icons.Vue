@@ -1,6 +1,6 @@
 <template>
     <div class="icons">
-        <swiper>
+        <swiper :options="swiperOption">
             <swiper-slide v-for="(page,index) of pages" :key="index">
                 <div class="icon" v-for="item of page" :key="item.id">
                     <div class="icon-img"><img class="icon-img-content" :src="item.imgUrl" /></div>            
@@ -14,19 +14,25 @@
 <script>
 export default {
     name: 'HomeIcons',
+    props:{
+        iconList: Array
+    },
     data () {
         return {
-            iconList:[
-                {id:'0001',imgUrl:'https://cdn.pixabay.com/photo/2019/11/25/06/21/leaf-4651088_960_720.jpg',desc:'景点门票'},
-                {id:'0002',imgUrl:'https://cdn.pixabay.com/photo/2019/11/25/06/21/leaf-4651088_960_720.jpg',desc:'滑雪季'},
-                {id:'0003',imgUrl:'https://cdn.pixabay.com/photo/2019/11/25/06/21/leaf-4651088_960_720.jpg',desc:'泡温泉'},
-                {id:'0004',imgUrl:'https://cdn.pixabay.com/photo/2019/11/25/06/21/leaf-4651088_960_720.jpg',desc:'动植物园'},
-                {id:'0005',imgUrl:'https://cdn.pixabay.com/photo/2019/11/25/06/21/leaf-4651088_960_720.jpg',desc:'海洋世界'},
-                {id:'0006',imgUrl:'https://cdn.pixabay.com/photo/2019/11/25/06/21/leaf-4651088_960_720.jpg',desc:'一日游'},
-                {id:'0007',imgUrl:'https://cdn.pixabay.com/photo/2019/11/25/06/21/leaf-4651088_960_720.jpg',desc:'必游榜单'},
-                {id:'0008',imgUrl:'https://cdn.pixabay.com/photo/2019/11/25/06/21/leaf-4651088_960_720.jpg',desc:'自然风光'},
-                {id:'0009',imgUrl:'https://cdn.pixabay.com/photo/2019/11/25/06/21/leaf-4651088_960_720.jpg',desc:'全部'},
-            ]
+            swiperOption:{
+                autoplay:false
+            },
+            // iconList:[
+            //     {id:'0001',imgUrl:'https://cdn.pixabay.com/photo/2019/11/25/06/21/leaf-4651088_960_720.jpg',desc:'景点门票'},
+            //     {id:'0002',imgUrl:'https://cdn.pixabay.com/photo/2019/11/25/06/21/leaf-4651088_960_720.jpg',desc:'滑雪季'},
+            //     {id:'0003',imgUrl:'https://cdn.pixabay.com/photo/2019/11/25/06/21/leaf-4651088_960_720.jpg',desc:'泡温泉'},
+            //     {id:'0004',imgUrl:'https://cdn.pixabay.com/photo/2019/11/25/06/21/leaf-4651088_960_720.jpg',desc:'动植物园'},
+            //     {id:'0005',imgUrl:'https://cdn.pixabay.com/photo/2019/11/25/06/21/leaf-4651088_960_720.jpg',desc:'海洋世界'},
+            //     {id:'0006',imgUrl:'https://cdn.pixabay.com/photo/2019/11/25/06/21/leaf-4651088_960_720.jpg',desc:'一日游'},
+            //     {id:'0007',imgUrl:'https://cdn.pixabay.com/photo/2019/11/25/06/21/leaf-4651088_960_720.jpg',desc:'必游榜单'},
+            //     {id:'0008',imgUrl:'https://cdn.pixabay.com/photo/2019/11/25/06/21/leaf-4651088_960_720.jpg',desc:'自然风光'},
+            //     {id:'0009',imgUrl:'https://cdn.pixabay.com/photo/2019/11/25/06/21/leaf-4651088_960_720.jpg',desc:'全部'},
+            // ]
         }
     },
     computed:{

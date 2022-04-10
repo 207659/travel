@@ -2,7 +2,7 @@
     <div>
         <div class="title">周末去哪儿</div>
         <ul>
-            <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+            <li class="item border-bottom" v-for="item of weekendList" :key="item.id">
                 <div class="item-img-wrapper"><img class="item-img" :src="item.imgUrl" /></div>
                 <div class="item-info">
                     <p class="item-title">{{item.title}}</p>
@@ -16,13 +16,16 @@
 <script>
 export default {
     name: 'HomeWeekend',
+    props: {
+        weekendList: Array
+    },
     data () {
         return {
-            recommendList:[
-                {id:'0001',title:'大连圣亚海洋世界',desc:'浪漫大连首站，浪漫的海洋主题乐园',imgUrl:'https://cdn.pixabay.com/photo/2021/07/01/21/19/hat-6380330_960_720.jpg'},
-                {id:'0002',title:'大连圣亚海洋世界',desc:'浪漫大连首站，浪漫的海洋主题乐园',imgUrl:'https://cdn.pixabay.com/photo/2021/07/01/21/19/hat-6380330_960_720.jpg'},
-                {id:'0003',title:'大连圣亚海洋世界',desc:'浪漫大连首站，浪漫的海洋主题乐园',imgUrl:'https://cdn.pixabay.com/photo/2021/07/01/21/19/hat-6380330_960_720.jpg'},
-            ]
+            // weekendList:[
+            //     {id:'0001',title:'大连圣亚海洋世界',desc:'浪漫大连首站，浪漫的海洋主题乐园',imgUrl:'https://cdn.pixabay.com/photo/2022/03/25/13/47/flowers-7091131_960_720.jpg'},
+            //     {id:'0002',title:'大连圣亚海洋世界',desc:'浪漫大连首站，浪漫的海洋主题乐园',imgUrl:'https://cdn.pixabay.com/photo/2022/03/25/13/47/flowers-7091131_960_720.jpg'},
+            //     {id:'0003',title:'大连圣亚海洋世界',desc:'浪漫大连首站，浪漫的海洋主题乐园',imgUrl:'https://cdn.pixabay.com/photo/2022/03/25/13/47/flowers-7091131_960_720.jpg'},
+            // ]
         }
     }
 }
@@ -31,7 +34,6 @@ export default {
 <style lang="stylus" scoped>
 @import '~styles/mixins.styl';
 .title
-    margin-top:.2rem
     line-height:.8rem
     background:#eee
     text-indent:.2rem
@@ -40,7 +42,7 @@ export default {
 .item-img-wrapper
     overflow:hidden
     height:0
-    padding-bottom:33.9%
+    padding-bottom:37.09%
     .item-img
         width:100%
 .item-info

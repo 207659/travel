@@ -17,16 +17,19 @@
 <script>
 export default {
     name: 'HomeRecommend',
+    props: {
+        recommendList: Array
+    },
     data () {
         return {
-            recommendList:[
-                {id:'0001',title:'大连圣亚海洋世界',desc:'浪漫大连首站，浪漫的海洋主题乐园',imgUrl:'https://cdn.pixabay.com/photo/2022/02/12/13/29/desert-7008952_960_720.jpg'},
-                {id:'0002',title:'大连圣亚海洋世界',desc:'浪漫大连首站，浪漫的海洋主题乐园',imgUrl:'https://cdn.pixabay.com/photo/2022/02/12/13/29/desert-7008952_960_720.jpg'},
-                {id:'0003',title:'大连圣亚海洋世界',desc:'浪漫大连首站，浪漫的海洋主题乐园',imgUrl:'https://cdn.pixabay.com/photo/2022/02/12/13/29/desert-7008952_960_720.jpg'},
-                {id:'0004',title:'大连圣亚海洋世界',desc:'浪漫大连首站，浪漫的海洋主题乐园',imgUrl:'https://cdn.pixabay.com/photo/2022/02/12/13/29/desert-7008952_960_720.jpg'},
-                {id:'0005',title:'大连圣亚海洋世界',desc:'浪漫大连首站，浪漫的海洋主题乐园',imgUrl:'https://cdn.pixabay.com/photo/2022/02/12/13/29/desert-7008952_960_720.jpg'},
-                {id:'0006',title:'大连圣亚海洋世界',desc:'浪漫大连首站，浪漫的海洋主题乐园',imgUrl:'https://cdn.pixabay.com/photo/2022/02/12/13/29/desert-7008952_960_720.jpg'},
-            ]
+            // recommendList:[
+            //     {id:'0001',title:'大连圣亚海洋世界',desc:'浪漫大连首站，浪漫的海洋主题乐园',imgUrl:'https://cdn.pixabay.com/photo/2022/02/12/13/29/desert-7008952_960_720.jpg'},
+            //     {id:'0002',title:'大连圣亚海洋世界',desc:'浪漫大连首站，浪漫的海洋主题乐园',imgUrl:'https://cdn.pixabay.com/photo/2022/02/12/13/29/desert-7008952_960_720.jpg'},
+            //     {id:'0003',title:'大连圣亚海洋世界',desc:'浪漫大连首站，浪漫的海洋主题乐园',imgUrl:'https://cdn.pixabay.com/photo/2022/02/12/13/29/desert-7008952_960_720.jpg'},
+            //     {id:'0004',title:'大连圣亚海洋世界',desc:'浪漫大连首站，浪漫的海洋主题乐园',imgUrl:'https://cdn.pixabay.com/photo/2022/02/12/13/29/desert-7008952_960_720.jpg'},
+            //     {id:'0005',title:'大连圣亚海洋世界',desc:'浪漫大连首站，浪漫的海洋主题乐园',imgUrl:'https://cdn.pixabay.com/photo/2022/02/12/13/29/desert-7008952_960_720.jpg'},
+            //     {id:'0006',title:'大连圣亚海洋世界',desc:'浪漫大连首站，浪漫的海洋主题乐园',imgUrl:'https://cdn.pixabay.com/photo/2022/02/12/13/29/desert-7008952_960_720.jpg'},
+            // ]
         }
     }
 }
