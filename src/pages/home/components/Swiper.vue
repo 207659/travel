@@ -1,5 +1,4 @@
 <template>
-<!-- 最外层加个div -->
 <div class="wrapper">
     <swiper :options="swiperOption">
         <swiper-slide v-for="item of swiperList" :key="item.id"><img class="swiper-img" :src="item.imgUrl" /></swiper-slide>
