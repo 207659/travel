@@ -34,6 +34,9 @@ export default {
             }
         }
     },
+    mounted () {
+        window.addEventListener('scroll', this.handleScroll)
+    },
     activated () {
         window.addEventListener('scroll', this.handleScroll)
     },
