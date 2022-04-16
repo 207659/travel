@@ -7,8 +7,7 @@ import detail from '@/pages/detail/detail'
 Vue.use(Router)
 
 export default new Router({
-  routes: [
-    {
+  routes: [{
       path: '/',
       name: 'home',
       component: home
@@ -22,6 +21,8 @@ export default new Router({
       path: '/detail/:id',
       name: 'detail',
       component: detail
+    }],
+    scrollBehavior (to, from, savedPosition) {
+      return {x: 0, y: 0}
     }
-  ]
 })
