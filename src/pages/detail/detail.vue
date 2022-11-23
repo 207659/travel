@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div style="position: relative;">
         <detail-banner :sightName="sightName" :bannerImg="bannerImg" :gallaryImgs="gallaryImgs"></detail-banner>
         <detail-header></detail-header>
         <div class="content">
@@ -62,6 +62,6 @@ export default {
   
 <style lang="stylus" scoped>
 .content
-    height:50rem
+    min-height:8rem
 </style>
   

@@ -51,12 +51,22 @@ export default {
   mounted () {
     this.lastCity = this.city
     this.getHomeInfo()
+    //窗口尺寸改变
+    window.onresize = () => {
+      return (() => {
+        // this.$forceUpdate();//强制更新数据
+        this.$router.go(0)
+      })()
+    }
   },
   activated () {
     if (this.lastCity !== this.city) {
       this.lastCity = this.city
       this.getHomeInfo()
     }
+  },
+  destroyed() {
+    window.onresize = null;
   }
 }
 </script>
